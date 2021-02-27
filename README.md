@@ -1,4 +1,4 @@
-# Title:
+
 # AgroMed: A Doctor for plants
 
 ## Description:
