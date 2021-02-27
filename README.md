@@ -1,3 +1,14 @@
-# HackVerse
-HackVerse 2.0 Hackathon Project
-#Our Project
+# Title:
+
+## Description:
+
+
+## Tech Stack:
+
+
+## Libraries and Dependencies:
+
+## Installation steps:
+
+## Declaration of Previous Work:
+
