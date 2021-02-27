@@ -1,4 +1,5 @@
-# Title:AgroMed: A Doctor for plants
+# Title:
+# AgroMed: A Doctor for plants
 
 ## Description:
 Here, We have tried to develop an app that detects diseases in plants just by scanning the leaves. The app also suggests possible solutions such as pesticides or insecticides that can be used to cure the plant of the disease .
