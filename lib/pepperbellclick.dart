@@ -170,18 +170,51 @@ class _DiseaseDetectionState extends State<PepperBellDiseaseDetection> {
                                         ],
                                       )
                                     : Container(child: Text("")),
-                            FlatButton(
-                                color: Colors.green[300],
-                                textColor: Colors.white,
-                                disabledColor: Colors.grey,
-                                disabledTextColor: Colors.black,
-                                padding: EdgeInsets.fromLTRB(24, 25, 24, 25),
-                                splashColor: Colors.greenAccent,
-                                onPressed: () {
-                                  Navigator.pushNamed(
-                                      context, '/fertcalcpepperbell');
-                                },
-                                child: Text('Fertilizer Calculator')),
+                            Column(
+                              children: [
+                                FlatButton(
+                                    color: Colors.green[300],
+                                    textColor: Colors.white,
+                                    disabledColor: Colors.grey,
+                                    disabledTextColor: Colors.black,
+                                    padding:
+                                        EdgeInsets.fromLTRB(72, 15, 72, 15),
+                                    splashColor: Colors.greenAccent,
+                                    onPressed: () {
+                                      Navigator.pushNamed(
+                                          context, '/fertcalcpepperbell');
+                                    },
+                                    child: Text('Fertilizer Calculator')),
+                                FlatButton(
+                                    color: Colors.green[300],
+                                    textColor: Colors.white,
+                                    disabledColor: Colors.grey,
+                                    disabledTextColor: Colors.black,
+                                    padding:
+                                        EdgeInsets.fromLTRB(50, 20, 50, 20),
+                                    splashColor: Colors.greenAccent,
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, '/sentmail');
+                                    },
+                                    child:
+                                        Text('''Couldn't Find Your Answer!''')),
+                                Container(
+                                  height: 3,
+                                ),
+                                FlatButton(
+                                    color: Colors.green[300],
+                                    textColor: Colors.white,
+                                    disabledColor: Colors.grey,
+                                    disabledTextColor: Colors.black,
+                                    padding:
+                                        EdgeInsets.fromLTRB(60, 20, 60, 20),
+                                    splashColor: Colors.greenAccent,
+                                    onPressed: () {
+                                      Navigator.pushNamed(context, '/location');
+                                    },
+                                    child: Text('Fertilizer Store Location'))
+                              ],
+                            ),
                           ],
                         ),
                       ),
