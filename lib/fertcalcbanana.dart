@@ -20,7 +20,7 @@ class MyCustomForm extends StatefulWidget {
 // Define a corresponding State class.
 // This class holds the data related to the Form.
 class _MyCustomFormState extends State<MyCustomForm> {
-  bool showvalue = false;
+  bool show_value = false;
   // Create a text controller and use it to retrieve the current value
   // of the TextField.
   final myController = TextEditingController();
@@ -66,14 +66,22 @@ class _MyCustomFormState extends State<MyCustomForm> {
             SizedBox(
               height: 10,
             ),
-            Row(
-              children: [
-                Text('Recognized Natural Enemies in your field'),
-                Checkbox(
-                  value: this.showvalue,
-                  onChanged: (bool value) {
+            Column(
+              children: <Widget>[
+                if (show_value)
+                  Column(
+                    children: <Widget>[
+                      Text(
+                          'We advise you not to use Chemicals for the next 45 days...'),
+                    ],
+                  ),
+                CheckboxListTile(
+                  title: Text("Natural Enemies in your Field"),
+                  controlAffinity: ListTileControlAffinity.leading,
+                  value: show_value,
+                  onChanged: (bool showvalue) {
                     setState(() {
-                      this.showvalue = value;
+                      show_value = showvalue;
                     });
                   },
                 ),
