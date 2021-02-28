@@ -10,7 +10,6 @@ import 'package:agromed_main/fertcalcpotato.dart';
 import 'package:flutter/material.dart';
 import 'package:agromed_main/splash.dart';
 import 'package:agromed_main/riceclick.dart';
-
 import 'package:agromed_main/notification.dart';
 import 'package:agromed_main/cucumberclick.dart';
 import 'package:agromed_main/tomatoclick.dart';
